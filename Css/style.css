@@ -466,10 +466,15 @@ table {
 }
 
 /* --------------------------NOSOTROS-------------------------- */
+.sobre_nosotros {
+    margin: 10px;
+    padding: 10px;
+    font-size: 50px;
+}
 
 #articulo .sobreN {
     padding: 10px;
-    margin: 30px 15px;
+    margin: 15px;
 }
 
 
