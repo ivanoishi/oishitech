@@ -1,10 +1,10 @@
 /* RESET */
-
-*{
-    text-decoration: none;
-    /* color: tomato;
+* {
+  text-decoration: none;
+  /* color: tomato;
     z-index: 1; */
 }
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -14,560 +14,359 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
+
 body {
-	line-height: 1;
-    text-decoration: none;
+  line-height: 1;
+  text-decoration: none;
 }
+
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
+
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-
-
-/* --------------------------HTML-BODY-NAV-------------------------- */
-#cuerpo {
-    background-color: #E7E7E7;
-    font-family: 'Share Tech', sans-serif;
-    margin: 0;
-    padding: 0;
-    /* padding-top: 70px; */
-}
-
-.barra {
-    background-color: #222831;
-    height: 50px;
-    width: 100%;
-    left: 0;
-    top: 0;
-    padding: 10px;
-    display: grid;
-    grid-template-columns: repeat(3, 33.333333%);
-    grid-template-rows: 1fr;
-    justify-items: center;
-    position:fixed;
-    z-index: 50;
-}
-
-.menuHtml input{
-    display: none;
-}
-.barra ul {
-    margin-top:20px;
-}
-.barra ul li {
-    display: inline;
-}
-.barra .estoyAca a {
-    background-color: #393e46;
-    border-radius: 10px;
-}
-
-.barra .cajaFondo {
-    color: #eeeeee;
-    padding: 10px;
-    margin: 10px;
-}
-
-.barra .cajaFondo:hover {
-    background-color:#393e46;
-    border-radius: 10px;
-}
-
-.barra a img {
-    margin-top: 6px;
-    width: 40px;
-    height: 40px;
-} 
-.carrito {
-    margin-top: 20px;
-}
-
-
-#cabeza {
-    display: none;
-}
-
-
-
-/* --------------------------FOOTER-------------------------- */
 
 #piePagina {
-    background-color: #222831;
-    margin: 50vh 0 0 0;
-    padding: 10px;
-    text-align: center;
+  background-color: #222831;
+  margin: 50vh 0 0 0;
+  padding: 10px;
+  text-align: center;
 }
-#piePagina li {
-    margin: 10px;
-}
-#piePagina a {
-    color: #eeeeee;
-} 
+
 #piePagina h3 {
-    font-size: 25px;
-    font-weight: bold;
-    margin: 15px 0;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 15px 0;
 }
+
+#piePagina h3 a {
+  color: #eeeeee;
+}
+
+#piePagina li {
+  margin: 10px;
+}
+
+#piePagina li a {
+  color: #eeeeee;
+}
+
 #piePagina div {
-    color: #eeeeee;
-    font-size: 10px;
-    margin: 15px 0 5px 0;
+  color: #eeeeee;
+  font-size: 10px;
+  margin: 15px 0 5px 0;
 }
-
-
-
-
-
-/* --------------------------INDEX-------------------------- */
-
-.dYp {
-    width: auto;
-    height: auto;
-    margin: 0 0 10px 0;
-}
-.dYp img {
-    width: 100%;
-    height: 100%;
-}
-.container{
-    width: auto;
-    height: auto;
-    margin-bottom: 100px;
-    z-index: 1;
-}
-  
-.container .slider{
-    position:relative;
-    width: auto;
-    height: 300px;
-    z-index: -1;
-}
-  
-.container .slider li {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    opacity: 0;
-    width: inherit;
-    height: inherit;
-    transition: opacity .5s;
-    background:#fff;
-    z-index: 1;
-}
-  
-.container .slider li img{
-    
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    z-index: 1;
-}
-  
-.container .slider li:first-child {
-    opacity: 1; 
-}
-  
-.container .slider li:target {
-    opacity: 1; 
-}
-  
-.container .menu{
-    text-align: center;
-    margin: 20px;
-    z-index: 1;
-}
-  
-.menu li{
-    display: inline-block;
-    text-align: center;
-    z-index: 1;
-}
-  
-.menu li a{
-    display: inline-block;
-    color: #393e46;
-    text-decoration: none;
-    background-color: rgba(81, 81, 81, 0.1);
-    padding: 10px;
-    width: 20px;
-    height: 20px;
-    font-size: 20px;
-    border-radius: 100%;
-    z-index: 1;
-}
-
 
 .iconInfo {
-    margin: 30px 0;
-    padding: 15px;
-    background-color:rgba(81, 81, 81, 0.1);
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
+  margin: 30px 0;
+  padding: 15px;
+  background-color: rgba(81, 81, 81, 0.1);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
 }
-.iconHijo {
-    padding: 10px;
-    /* border: 2px solid tomato; */
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
 
+.iconInfo .iconHijo {
+  padding: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
 }
+
+.iconInfo .iconHijo img {
+  width: 80px;
+}
+
 .iconInfo .iconHijo .iconTxt {
-    width: 200px;
-    margin: 10px 0 0 10px;
-    display: flex;
-    flex-flow: column nowrap;
-    /* border: 2px solid tomato; */
-}
-.iconInfo .iconHijo .iconTxt h3 {
-    margin: 10px 0 0 0;
-    color: #515151;
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-.iconInfo .iconHijo .iconTxt p {
-    margin: 10px 0 0 0;
-    color: #515151;
-    font-size: 15px;
-    letter-spacing: 2px;
-}
-.iconInfo div img {
-    width: 80px;
+  width: 200px;
+  margin: 10px 0 0 10px;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
+.iconInfo .iconHijo .iconTxt h3 {
+  margin: 10px 0 0 0;
+  color: #515151;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.iconInfo .iconHijo .iconTxt p {
+  margin: 10px 0 0 0;
+  color: #515151;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
 
 .tituloIndex {
-    margin: 80px 20px 30px 20px; 
-    padding: 10px;
-    font-size: 40px;
-    color: #222831;
-    text-align: center;
-    letter-spacing: 8px;
+  margin: 80px 20px 30px 20px;
+  padding: 10px;
+  font-size: 40px;
+  color: #222831;
+  text-align: center;
+  letter-spacing: 8px;
 }
 
 .destacados {
-    margin: 10px;
-    padding: 10px;
-    color: #222831;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 2fr;
-    justify-content: space-around;
-    justify-items: center;
-    align-items: center;
-    z-index: 1;
+  margin: 10px;
+  padding: 10px;
+  color: #222831;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2fr;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+  z-index: 1;
 }
+
 .destacados .destacadosHijos {
-    margin: 10px;
-    padding: 10px;
-    background-color: #FFFF;
-    border-radius: 15px;
-    width: 300px;
-    height: auto;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    z-index: 1;
+  margin: 10px;
+  padding: 10px;
+  background-color: #FFFF;
+  border-radius: 15px;
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 1;
 }
+
 .destacados .destacadosHijos img {
-    margin: 20px;
-    padding: 10px;
-    width: 200px;
-    height: auto;
+  margin: 20px;
+  padding: 10px;
+  width: 200px;
+  height: auto;
 }
+
 .destacados .destacadosHijos p {
-    font-size: 25px;
-    margin: 15px;
-    padding: 5px;
-    letter-spacing: 4px;
+  font-size: 25px;
+  margin: 15px;
+  padding: 5px;
+  letter-spacing: 4px;
 }
 
 .destacados .destacadosHijos ul li {
-    font-size: 15px;
-    margin: 5px;
-    padding: 5px;
-    letter-spacing: 1px;
+  font-size: 15px;
+  margin: 5px;
+  padding: 5px;
+  letter-spacing: 1px;
 }
 
-
-
-/* --------------------------CATEGORIA-------------------------- */
-
-#cajaCategoria {
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center; 
-       
-}
-
-#cajaCategoria .pro {
-    width: auto;
-    height: auto;
-    text-align: center;
-    /* border: 2px solid #222831; */
-    border-radius: 15px;
-    margin: 50px 50px;
-    z-index: 0;
-}
-
-#cajaCategoria .pro .repositorio img {
-    width: 400px;
-    height: 400px;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-    background-color: #eeeeee;
-    
-}
-#cajaCategoria .pro  div{
-    padding: 14px 48px;
-    background-color: #FFFF;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-}
-#cajaCategoria .pro div .repositorio h3 {
-    width: 288px;
-    height: auto;
-    color: #222831;
-    font-size: 18px;
-    letter-spacing: 3px;
-    
-}
-
-
-/* --------------------------CELULARES-------------------------- */
-.portada {
-    width: auto;
-    height: auto;
-    margin: 0 0 10px 0;
-}
-.portada .portadaCelu {
-    width: 100%;
-    height: 200px;
-}
 /* --------------------------COMPUTADORAS-------------------------- */
 .cajaProductos {
-    margin: 100px 10px 150px 10px;
-    padding: 10px;
-    color: #222831;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 2fr;
-    justify-content: space-around;
-    justify-items: center;
-    align-items: center;
+  margin: 100px 10px 150px 10px;
+  padding: 10px;
+  color: #222831;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2fr;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
 }
+
 .cajaProductos .cajaProductosComp {
-    margin: 50px 10px;
-    padding: 10px;
-    background-color: #FFFF;
-    border-radius: 15px;
-    width: 350px;
-    height: auto;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    z-index: 0;
+  margin: 50px 10px;
+  padding: 10px;
+  background-color: #FFFF;
+  border-radius: 15px;
+  width: 350px;
+  height: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 0;
 }
+
 .cajaProductos .cajaProductosComp img {
-    margin: 20px;
-    padding: 10px;
-    width: 200px;
-    height: auto;
+  margin: 20px;
+  padding: 10px;
+  width: 200px;
+  height: auto;
 }
+
 .cajaProductos .cajaProductosComp p {
-    font-size: 25px;
-    margin: 15px;
-    padding: 5px;
-    letter-spacing: 4px;
+  font-size: 25px;
+  margin: 15px;
+  padding: 5px;
+  letter-spacing: 4px;
 }
 
 .cajaProductos .cajaProductosComp ul li {
-    font-size: 15px;
-    margin: 5px;
-    padding: 5px;
-    letter-spacing: 1px;
+  font-size: 15px;
+  margin: 5px;
+  padding: 5px;
+  letter-spacing: 1px;
 }
 
-
-/* --------------------------TABLETS-------------------------- */
-
-
-
-/* --------------------------ACCESORIOS-------------------------- */
-
-
-
-
-/* --------------------------CONTACTOS-------------------------- */
-
-#articulo form input {
-    display: block;
-}
-
-.redesSociales {
-    color:#222831;
-    text-align: center;
-    font-size: 30px;
-    padding: 10px;
-    margin: 20px;
-    font-style: normal;
-    font-weight: bolde
-}
-
-.div-cont  {
-    text-align: center;
-    display: inline-block;
-    padding: 20px;
-    margin: 0 150px;
-}
-.div-cont a {
-    color: #222831;
-    text-decoration: none;
-}
-.div-cont a img {
-    width: 30px;
-    display: block;
-    margin: 10px 0 10px 15px;
-}
-
-/* --------------------------NOSOTROS-------------------------- */
 .sobre_nosotros {
-    margin: 10px;
-    padding: 10px;
-    font-size: 50px;
+  margin: 10px;
+  padding: 10px;
+  font-size: 50px;
 }
 
 #articulo .sobreN {
-    padding: 10px;
-    margin: 15px;
+  padding: 10px;
+  margin: 15px;
 }
 
-
-/* -------------------------- | RESPONSIVE | -------------------------- */
-
-@media screen and (max-width:1024px){
-   
-/* --------------------------CAJA DE INDEX-------------------------- */
-    .destacados {
-        margin: 10px;
-        padding: 10px;
-        color: #222831;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 4fr;
-        justify-content: space-around;
-        justify-items: center;
-        align-items: center;
-        z-index: 1;
-    }
-
-/* --------------------------CELULARES-------------------------- */
-
-    .portada .portadaCelu {
-        width: 100%;
-        height: 86px;
-    }
-/* --------------------------CAJA DE PRODUCTOS-------------------------- */
-    .cajaProductos {
-        margin: 10px;
-        padding: 10px;
-        color: #222831;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 4fr;
-        justify-content: space-around;
-        justify-items: center;
-        align-items: center;
-        z-index: 1;
-    }
-
-/* --------------------------BOTON HAMBURGESA-------------------------- */
-    .botonMenu{
-        margin: 5px auto;
-        display: block;
-        width: 30px;
-        height: 26px;
-        padding: 10px;
-        border-radius: 7px;
-        color:#eeeeee;
-        cursor: pointer;
-        position:relative;
-        z-index: 100;
-    }
-     
-    .botonMenu span{
-        display: block;
-        width: 30px;
-        height: 4px;
-        background: white;
-        margin-top: 4px;
-        z-index: 100;
-    }
-     
-    label{
-        cursor: pointer;
-        z-index: 100;
-    }
-     
-    #menu-toggle{
-        display: none;
-        z-index: 100;
-    }
-     
-    #trickMenu{
-        display: none;
-        text-align: center;
-        background: #222831;
-        padding: 5px;
-        border-radius: 10px;
-        z-index: 100;
-    }
-     
-    #trickMenu li a{
-        display: block;
-        padding: 10px 0;
-        color:#eeeeee;
-        z-index: 100;
-    }
-     
-    #menu-toggle:checked + #trickMenu{
-        display: block;
-        z-index: 100;
-    }
-
+#cuerpo {
+  background-color: #E7E7E7;
+  font-family: 'Share Tech', sans-serif;
+  margin: 0;
+  padding: 0;
 }
+
+#cabeza {
+  display: none;
+}
+
+/* Reset estilos por defecto */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.coverPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(../Multimedia/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.coverPage::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background: black;
+  opacity: .8;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+}
+
+.__coverPage-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  height: 50%;
+  width: 50%;
+  z-index: 1000;
+  text-align: center;
+  opacity: .9;
+  padding: 1em;
+}
+
+.__coverPage-content h1 {
+  font-size: 4em;
+  color: #F9A825;
+  opacity: .8;
+}
+
+.__coverPage-content h2 {
+  font-size: 2.2em;
+  margin-bottom: 1.5em;
+}
+
+.__coverPage-content h3 {
+  font-size: 1.6em;
+  margin-bottom: .8em;
+  text-transform: uppercase;
+  opacity: .7;
+}
+
+.__coverPage-content p {
+  font-size: .95em;
+  margin-bottom: 1.5em;
+  line-height: 1.5;
+  opacity: .7;
+}
+
+.socialIcon {
+  margin-right: 10px;
+  opacity: .7;
+}
+
+.socialIcon i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 15px;
+  height: 25px;
+  width: 25px;
+  transition: all .3s;
+}
+
+.socialIcon i:hover {
+  color: #F9A825;
+  border-color: #F9A825;
+}
+
+@media screen and (min-width: 321px) and (max-width: 1023px) {
+  .__coverPage-content {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,89 @@
+.iconInfo {
+    margin: 30px 0;
+    padding: 15px;
+    background-color:rgba(81, 81, 81, 0.1);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    .iconHijo {
+        padding: 10px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        img {
+            width: 80px;
+        }
+        .iconTxt {
+            width: 200px;
+            margin: 10px 0 0 10px;
+            display: flex;
+            flex-flow: column nowrap;
+            h3 {
+                margin: 10px 0 0 0;
+                color: #515151;
+                font-size: 20px;
+                font-weight: bold;
+                letter-spacing: 2px;
+            }
+            p {
+                margin: 10px 0 0 0;
+                color: #515151;
+                font-size: 15px;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}
+.tituloIndex {
+    margin: 80px 20px 30px 20px; 
+    padding: 10px;
+    font-size: 40px;
+    color: #222831;
+    text-align: center;
+    letter-spacing: 8px;
+}
+.destacados {
+    margin: 10px;
+    padding: 10px;
+    color: #222831;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    z-index: 1;
+    .destacadosHijos {
+        margin: 10px;
+        padding: 10px;
+        background-color: #FFFF;
+        border-radius: 15px;
+        width: 300px;
+        height: auto;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 1;
+        img {
+            margin: 20px;
+            padding: 10px;
+            width: 200px;
+            height: auto;
+        }
+        p {
+            font-size: 25px;
+            margin: 15px;
+            padding: 5px;
+            letter-spacing: 4px;
+        }
+        ul {
+            li {
+                font-size: 15px;
+                margin: 5px;
+                padding: 5px;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
